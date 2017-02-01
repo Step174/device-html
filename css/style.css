@@ -1,12 +1,12 @@
 body {
-	font-size: 14px;
-	line-height: 26px;
+	font-size: 15px;
+	line-height: 30px;
   color: ;
   font-weight: normal;
   font-family: "Open Sans";
 
-  min-width: 1160px;
-  min-height: 2800px;
+  min-width: 1440px;
+  /*min-height: 2795px;*/
   margin: 0;
   padding: 0;
 }
@@ -20,7 +20,7 @@ b {
 }
 
 h2 {
-   font-size: 21px;
+   font-size: 18px;
    line-height: 21px;
    color: ;
    font-weight: bolder;
@@ -33,15 +33,224 @@ h2 {
   margin: 0 auto;
 }
 
+header ul li,
+.item-promo ul li,
+.footer-social ul li,
+.footer-contacts ul li,
+.breadcrumbs ul li,
+.sort ul li,
+.page-nav ul li {
+  display: inline-block;
+  
+}
+
+.main-header {
+  width: 1040px;
+  min-height: 172px;
+  margin: 0 auto;
+}
+
+.main-header .logo {
+  margin-top: 20px;
+}
+
+.header-up {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+}
+
+.main-user {
+  width: 500px;
+}
+
+.header-nav li:first-child {
+  margin-right: 500px;
+}
+
+.item-promo {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  min-height: 542px;
+  margin-top: -13px;
+  margin-bottom: 105px;
+}
+
+.item-promo img{
+  width: 384px;
+  margin-top: 53px;
+  margin-left: 30px;
+}
+
+.item-promo-info {
+  width: 500px;
+}
 
 
 
+.item-catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 87px;
+}
 
 
+.item-img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 30px;
+}
 
 
+.features {
+  display: flex;
+  justify-content: space-between;
+  min-height: 385px;
+  margin-bottom: 98px;
+}
+
+.features-item {
+  width: 280px;
+  }
+
+.features-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+}
+
+.text {
+  width: 460px;
+}
+
+.features-info img {
+  margin-right: 60px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 100px;
+}
+
+.info-company {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  min-height: 555px;
+}
 
 
+.about-us {
+  width: 460px;
+}
+
+.contacts {
+  width: 560px;
+}
+
+
+footer {
+  margin-top: 92px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 323px;
+}
+
+
+.logo-adress {
+  width: 200px;
+  height: 172px;
+  margin-top: 63px;
+}
+
+
+.footer-social {
+  width: 450px;
+  height: 128px;
+  margin-left: auto;
+  margin-top: 140px;
+}
+
+.footer-contacts {
+  width: 352px;
+  height: 192px;
+  margin-top: 63px;
+}
+
+.main-width {
+  width: 1102px;
+  margin-left: 58px;
+}
+
+.breadcrumbs {
+  width: 502px;
+  height: 86px;
+  margin-top: 95px;
+  margin-bottom: 55px;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  width: 1102px;
+  min-height: 67px;
+  margin-bottom: 70px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-device {
+  width: 202px;
+  min-height: 1140px;
+}
+
+.price {
+  min-height: 136px;
+}
+.color {
+ min-height: 272px;
+}
+
+.bluetooth {
+  min-height: 150px;
+}
+
+.list-device {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+  min-height: 962px;
+   
+}
+
+.proposed-device {
+   width: 360px;
+   height: 454px;
+}
+
+.page-nav {
+  margin-top: 40px;
+  width: 760px;
+  min-height: 68px;
+  text-align: center;
+}
+
+
+.footer-catalog {
+  margin-top: 0;
+}
 
 
 
@@ -64,14 +273,27 @@ h2 {
  .features,
  .brands,
  .info-company,
- .main-footer {
+ .main-footer,
+ footer,
+ .main-width,
+ .filter-device {
   outline: 2px solid green;
   background-color: rgba(114,255,0,0.5);
  }
 
 .main-user,
 .main-navigation,
-.features-item {
+.features-item,
+.header-up,
+.item-catalog div,
+.features-info,
+.breadcrumbs,
+.price,
+.color,
+.bluetooth,
+.sort,
+.proposed-device,
+.page-nav {
   outline: 2px solid black;
  }
 
@@ -82,7 +304,8 @@ h2 {
  .contacts,
  .logo-adress,
  .footer-social,
- .footer-contacts {
+ .footer-contacts,
+ .list-device {
   outline: 2px solid orange;
   background-color: rgba(255,141,0,0.5);
  }

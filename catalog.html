@@ -8,17 +8,15 @@
   <body>
    <header class="container">
      <div class="main-header">
-       <a><img src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
+       <a><img class="logo" src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
        <div class="header-up">
-       <input type="search" name="q" placeholder="Поиск по сайту">
-         <nav class="main-user">
-         <ul class="nav-header">
+       <input type="search" name="q" placeholder="Поиск по сайту"> 
+         <ul class="main-user">
            <li><a href="#">Валентин Петухов</a></li>
            <li><a href="#">Выйти</a></li>
            <li><a href="#">Сравнить</a></li>
            <li><a href="#">Корзина</a></li>     
          </ul>  
-         </nav>
        </div>
       <div class="header-down">
          <nav class="main-navigation">
@@ -33,8 +31,8 @@
      </div>
    </header>
 
-   <main>
-    <div class="container">
+   <main class="container">
+    <div class="main-width">
      <div class="breadcrumbs">
      <h2>Моноподы для селфи</h2>
        <ul>
@@ -43,16 +41,30 @@
          <li>Моноподы для селфи</li>
        </ul>    
      </div>
+   
+     <div class="sort">
+         <h2>Фильтр:</h2>
+         <h2>Сортировка:</h2>
+         <ul>
+           <li><a href="#">По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По популярности</a></li>
+         </ul>
+       <div class="sort-arrow">
+         <a href="#">/\</a>
+         <a href="#">\/</a>
+       </div>
+     </div>
 
-     <div class="filter-device">   
-       <b>Фильтр:</b>
+<div class="flex-container">
+     <div class="filter-device">    
       <div class="price">
        <b>Стоимость</b>
        <input type="range" name="price">
      </div>
      
      <div class="color">
-       <b>Цвет</b>
+       <h2>Цвет</h2>
        <input type="checkbox" name="black">Черный<br>
        <input type="checkbox" name="white">Белый<br>
        <input type="checkbox" name="blue">Синий<br>
@@ -61,32 +73,19 @@
      </div>
      
      <div class="bluetooth">
-       <b>Bluetooth</b>
+       <h2>Bluetooth</h2>
        <input type="checkbox" name="yes">Есть<br>
        <input type="checkbox" name="no">Нет
      </div>
-       <a class="btn" href="#"></a>
+       <a class="btn" href="#">Показать</a>
      </div>
 
-     <div class="filter-results">
-       <div class="sort">
-         <h2>Сортировка:</h2>
-         <ul>
-           <li><a href="#">По цене</a></li>
-           <li><a href="#">По типу</a></li>
-           <li><a href="#">По популярности</a></li>
-         </ul>
-       <div class="sort-arrow">
-         <a href="#"></a>
-         <a href="#"></a>
-       </div>
-     </div>
-    
-    <div class="list-device">  
+     <div class="filter-results">   
+       <div class="list-device">  
     <article class="proposed-device">
-       <img src="img/item-1.jpg" width="360" height="380" alt="selfi stick">
+           <img src="img/item-1.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <h2>Любительская селфи-палка</h2>
+          <b>Любительская селфи-палка</b>
           <span>500 руб.</span>
         </div>
     </article>
@@ -94,7 +93,7 @@
     <article class="proposed-device">
        <img src="img/item-2.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <h2>Профессиональная селфи-палка</h2>
+          <b>Профессиональная селфи-палка</b>
           <span>1500 руб.</span>
         </div>
     </article>
@@ -102,7 +101,7 @@
     <article class="proposed-device">
        <img src="img/item-3.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <h2>Непотопляемая селфи-палка</h2>
+          <b>Непотопляемая селфи-палка</b>
           <span>2500 руб.</span>
         </div>
     </article>
@@ -110,27 +109,28 @@
     <article class="proposed-device">
        <img src="img/item-4.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <h2>Селфи-палка "Следуй за мной"</h2>
+          <b>Селфи-палка "Следуй за мной"</b>
           <span>4900 руб.</span>
         </div>
     </article>
     </div>
 
     <div class="page-nav">
-      <a class="back" href="#">Назад</a>
         <ul>
+          <li><a class="back" href="#">Назад</a></li>
           <li>1</li>
           <li><a href="">2</a></li>
           <li><a href="">3</a></li>
-        </ul>
-      <a class="back" href="#">Вперед</a>
+          <li><a class="back" href="#">Вперед</a></li>
+        </ul>   
      </div>
+    </div>
     </div>
     </div>
    </main>
 
-   <footer class="main-footer">
-     <div class="container">
+   <footer class="footer-catalog">
+     <div class="main-footer container">
         <div class="logo-adress">
           <img src="img/logo-footer.png" width="163" height="36" alt="logo">
           <p>г.Москва, ул.Строителей, 15</p>
@@ -147,9 +147,9 @@
         </div>
         <div class="footer-contacts">
            <ul class="footer-nav">
-         <li><a href="#">Войти</a></li>
-         <li><a href="#">Сравнить</a></li>
-         <li><a href="#">Корзина</a></li>     
+             <li><a href="#">Войти</a></li>
+             <li><a href="#">Сравнить</a></li>
+             <li><a href="#">Корзина</a></li>     
          </ul>
           <p>тел.: +7(495)495-95-95</p>
           <a class="btn" href="https://htmlacademy.ru">
