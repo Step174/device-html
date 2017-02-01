@@ -3,10 +3,170 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+   <header class="container">
+     <div class="main-header">
+       <a><img src="img/index-logo.png" width="138" height="70" alt="Device"></a>
+       <div class="header-up">
+       <input type="search" name="q" placeholder="Поиск по сайту">
+   	     <nav class="main-user">
+   		   <ul class="nav-header">
+   			   <li><a href="#">Войти</a></li>
+   			   <li><a href="#">Сравнить</a></li>
+   			   <li><a href="#">Корзина</a></li>  		
+   		   </ul>	
+   	     </nav>
+   	   </div>
+      <div class="header-down">
+   	     <nav class="main-navigation">
+   		   <ul class="header-nav">
+   		     <li><a href="#">Каталог товаров</a></li>
+   			   <li><a href="#">Доставка</a></li>
+   			   <li><a href="#">Гарантия</a></li>
+   			   <li><a href="#">Контакты</a></li>  		
+   		   </ul>	
+   	     </nav>
+   	   </div>
+     </div>
+   </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+   <main>
+     <div class="item-promo container">
+       <img src="img/selfi-stick.png" width="200" height="250" alt="selfi-stick-ben">
+      <div class="item-promo-info">
+        <h2>Делай селфи, как Бен Стиллер!</h2>
+        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        <a class="btn" href="#">Подробнее</a>
+         <div class="widget"> 
+           <ul> 
+             <li class="active"><a href="#">1</a></li> 
+             <li><a href="#">2</a></li> 
+             <li><a href="i#">3</a></li> 
+           </ul>    
+         </div>
+      	<div class="character">
+      	  <b>8,5 м</b>
+      	  <p>Длина палки</p>
+      	</div>
+      	<div class="character">
+      	  <b>5 кг</b>
+      	  <p>Вес палки</p>
+      	</div>
+      	<div class="character">
+      	  <b>Карбон</b>
+      	  <p>Материал</p>
+      	</div>
+      </div>	
+     </div>
+
+     <div class="item-catalog container">
+     	<ul>
+     	  <li>
+     	    <a href="#"><img src="img/icon-vr.png" width="75" height="72" alt="icon-home">Виртуальная реальность</a>
+     	  </li>
+   		  <li>
+   		    <a href="#"><img src="img/icon-monopod.png" width="75" height="72" alt="icon-home">Моноподы для селфи</a>
+   		    </li>
+   		  <li>
+   		    <a href="#"><img src="img/icon-action-cam.png" width="75" height="72" alt="icon-home">Экшн-камеры</a>
+   		  </li>
+   		  <li>
+   		    <a href="#"><img src="img/icon-band.png" width="75" height="72" alt="icon-home">Фитнесс браслеты</a>
+   		  </li>  
+   		  <li>
+   		    <a href="#"><img src="img/icon-smart-watch.png" width="75" height="72" alt="icon-home">Умные часы</a>
+   		  </li>
+   		  <li>
+   		    <a href="#"><img src="img/icon-drone.png" width="75" height="72" alt="icon-home">Квадрокоптеры</a>
+   		  </li>		
+     	</ul>
+     </div>
+
+     <div class="features">
+       <div class="features-item">
+         <ul>
+       	   <li><a href="#">Доставка</a></li>
+       	   <li><a href="#">Гарантия</a></li>
+       	   <li><a href="#">Кредит</a></li>
+         </ul>
+       </div>
+       <div class="features-info">
+         <h2>Доставка</h2>
+         <p>Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <img src="img/run-man.png" width="75" height="72" alt="icon-home">
+       </div>
+     </div>
+
+     <div class="brands container">
+     	<ul>
+     	  <li>
+     	    <a href="#"><img src="img/dji.png" width="75" height="72" alt="icon-home"></a>
+     	  </li>
+   		  <li>
+   		    <a href="#"><img src="img/sp-gadgets.png" width="75" height="72" alt="icon-home"></a>
+   		    </li>
+   		  <li>
+   		    <a href="#"><img src="img/gopro.png" width="75" height="72" alt="icon-home"></a>
+   		  </li>
+   		  <li>
+   		    <a href="#"><img src="img/vive.png" width="75" height="72" alt="icon-home"></a>
+   		  </li>  	
+     	</ul>
+     </div>
+
+     <div class="info-company container">
+       <div class="about-us">
+       	  <h2>О нас</h2>
+       	  <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+       	  <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+       	  <ul>
+       	  	<li><a href="">Деловые Линии</a></li>
+       	  	<li><a href="">Автотрейдинг</a></li>
+       	  	<li><a href="">ЖелДорЭкспедиция</a></li>
+       	  </ul>
+       	  <a class="btn" href="#">Подробнее о нас</a>
+       </div>
+
+       <div class="contacts">
+       	  <h2>Контакты</h2>
+       	  <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+       	  <img src="img/map.png" width="75" height="72" alt="icon-home">
+       	  <a class="btn" href="#">Напишите нам</a>
+       </div>
+     </div>
+   </main>
+
+   <footer class="main-footer">
+     <div class="container">
+        <div class="logo-adress">
+          <img src="img/index-logo.png" width="138" height="70" alt="Device">
+          <p>г.Москва, ул.Строителей, 15</p>
+        </div>  
+        <div class="footer-social">
+          <ul>
+       	    <li><a href="#">Доставка</a></li>
+       	    <li><a href="#">Гарантия</a></li>
+       	    <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инста</a>
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>  
+        </div>
+        <div class="footer-contacts">
+           <ul class="footer-nav">
+   			 <li><a href="#">Войти</a></li>
+   			 <li><a href="#">Сравнить</a></li>
+   			 <li><a href="#">Корзина</a></li>  		
+   		   </ul>
+          <p>тел.: +7(495)495-95-95</p>
+          <a class="btn" href="https://htmlacademy.ru">
+            <img src="img/html-academy.png" width="113" height="39" alt="htmlacademy">
+          </a>
+        </div>
+     </div>
+   </footer>
 
   </body>
 </html>
