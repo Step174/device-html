@@ -3,47 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
    <header class="container">
      <div class="main-header">
-       <a><img class="logo" src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
+       <a href="#"><img class="logo" src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
        <div class="header-up">
-         <input type="search" name="q" placeholder="Поиск по сайту">
+         <div class="search-focus">
+           <input type="search" tabindex="1" name="q" placeholder="Поиск по сайту">
+           <a href="#" tabindex="1">Найти</a>
+         </div>
    		     <ul class="main-user">
-   			   <li><a href="#">Войти</a></li>
-   			   <li><a href="#">Сравнить</a></li>
-   			   <li><a href="#">Корзина</a></li>  		
+   			     <li><a href="#">Войти</a></li>
+   			     <li><a href="#">Сравнить</a></li>
+   			     <li><a href="#">Корзина</a></li>  		
    		   </ul>
    	   </div>
       <div class="header-down">
-   	     <nav class="main-navigation">
-   		   <ul class="header-nav">
-   		     <li><a href="#">Каталог товаров</a></li>
-   			   <li><a href="#">Доставка</a></li>
-   			   <li><a href="#">Гарантия</a></li>
-   			   <li><a href="#">Контакты</a></li>  		
-   		   </ul>	
-   	     </nav>
+        <span class="nav-catalog-active"><a href="#">Каталог товаров</a>
+<div class="nav-catalog-header">
+          <ul class="nav-catalog 1"> 
+          <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="nav-catalog 2"> 
+            <li><a href="#">Фитнесc-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+          </ul>   
+          <ul class="nav-catalog 3"> 
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul> 
+        </div>
+
+        </span>
+   			<a href="#">Доставка</a>
+   			<a href="#">Гарантия</a>
+   			<a href="#">Контакты</a>
+
+        
    	   </div>
      </div>
    </header>
 
    <main>
-     <div class="item-promo container">
+     <div class="item-promo slider-1 container">
        <img src="img/selfi-stick-index.png" width="384" height="486" alt="selfi-stick-ben">
       <div class="item-promo-info">
-        <h2>Делай селфи, как Бен Стиллер!</h2>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        <h2>Делай селфи,<br> как Бен Стиллер!</h2>
+        <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a class="btn" href="#">Подробнее</a>
-         <div class="widget"> 
-           <ul> 
-             <li class="active"><a href="#">1</a></li> 
-             <li><a href="#">2</a></li> 
-             <li><a href="i#">3</a></li> 
-           </ul>    
-         </div>
+         <div class="char-flex">
       	<div class="character">
       	  <b>8,5 м</b>
       	  <p>Длина палки</p>
@@ -56,15 +68,16 @@
       	  <b>Карбон</b>
       	  <p>Материал</p>
       	</div>
+        </div>
       </div>	
      </div>
-
+ 
      <div class="item-catalog container">
      	  <div>
      	    <a href="#"><div class="item-img"><img src="img/popular-1.png" width="97" height="55" alt="VR"></div><p>Виртуальная реальность</p></a>
      	  </div>
    		  <div>
-   		    <a href="#"><div class="item-img"><img src="img/popular-2.png" width="86" height="117" alt="selfi"></div><p>Моноподы для селфи</p></a>
+   		    <a href="#"><div class="item-img"><img src="img/popular-2.png" width="86" height="117" alt="selfi"></div><p>Моноподы<br> для селфи</p></a>
    		 </div>
    		  <div>
    		    <a href="#"><div class="item-img"><img src="img/popular-3.png" width="71" height="87" alt="action"></div><p>Экшн-камеры</p></a>
@@ -83,40 +96,35 @@
      <div class="features container">
        <div class="features-item">
          <ul>
-       	   <li><a href="#">Доставка</a></li>
-       	   <li><a href="#">Гарантия</a></li>
-       	   <li><a href="#">Кредит</a></li>
+       	   <li><a class="btn btn-features" href="#">Доставка</a></li>
+       	   <li><a class="btn btn-features" href="#">Гарантия</a></li>
+       	   <li><a class="btn btn-features" href="#">Кредит</a></li>
          </ul>
        </div>
        <div class="features-info">
          <div class="text">
            <h2>Доставка</h2>
-           <p>Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
          </div>
          <img src="img/delivery.png" width="136" height="164" alt="delivery">
        </div>
      </div>
 
      <div class="brands container">
-     	 
      	  <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="dji"></a>
-     	
-   		 
-   		   <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="sp-gadgets"></a>
-   		 
-   		 
-   		   <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="gopro"></a>
-   		 
-   		 
-   		   <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="vive"></a>
-   		   	
+
+   		  <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="sp-gadgets"></a>
+
+   		  <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="gopro"></a>
+
+   		  <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="vive"></a>		   	
      </div>
 
      <div class="info-company container">
        <div class="about-us">
        	  <h2>О нас</h2>
-       	  <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-       	  <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+       	  <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
+       	  <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
        	  <ul>
        	  	<li><a href="">Деловые Линии</a></li>
        	  	<li><a href="">Автотрейдинг</a></li>
@@ -146,9 +154,9 @@
        	    <li><a href="#">Гарантия</a></li>
        	    <li><a href="#">Контакты</a></li>
           </ul>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инста</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>  
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-tw" href="#"></a>  
         </div>
         <div class="footer-contacts">
            <ul class="footer-nav">
@@ -156,8 +164,8 @@
    			     <li><a href="#">Сравнить</a></li>
    			     <li><a href="#">Корзина</a></li>  		
    		   </ul>
-          <p>тел.: +7(495)495-95-95</p>
-          <a class="btn" href="https://htmlacademy.ru">
+          <p>Тел.: +7(495)495-95-95</p>
+          <a href="https://htmlacademy.ru">
             <img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy">
           </a>
         </div>
