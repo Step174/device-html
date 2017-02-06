@@ -6,30 +6,33 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-   <header class="container">
-     <div class="main-header">
-       <a><img class="logo" src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
+      <header class="container">
+     <div class="main-header main-user-catalog">
+       <a href="#"><img class="logo logo-catalog" src="img/index-logo.png" width="164" height="36" alt="Device-logo"></a>
        <div class="header-up">
-         <input type="search" name="q" placeholder="Поиск по сайту">
+         <div class="search-focus">
+           <input type="search" tabindex="1" name="q" placeholder="Поиск по сайту">
+           <a href="#" tabindex="1">Найти</a>
+         </div>
            <ul class="main-user">
-           <li><a href="#">Валентин Петухов</a></li>
-             <li><a href="#">Выйти</a></li>
+             <li><a href="#">Валентин Петухов</a></li>
+             <li><a>Выйти</a></li>
              <li><a href="#">Сравнить</a></li>
              <li><a href="#">Корзина</a></li>     
          </ul>
        </div>
-      <div class="header-down">
-        <a href="#">Каталог товаров</a> 
+      <div class="header-down header-down-catalog">
+        <span class="nav-catalog-active" ><a href="#">Каталог товаров</a>
+        </span>  
         <a href="#">Доставка</a>
         <a href="#">Гарантия</a>
-        <a href="#">Контакты</a>     
+        <a href="#">Контакты</a> 
        </div>
      </div>
-     <div class="size-header"></div>
    </header>
 
-   <main class="container">
-    <div class="main-width">
+   <main class="">
+    <div class="">
      <div class="breadcrumbs">
      <h2>Моноподы для селфи</h2>
        <ul>
@@ -38,25 +41,15 @@
          <li>Моноподы для селфи</li>
        </ul>    
      </div>
-   
-     <div class="sort">
-         <h2>Фильтр:</h2>
-         <h2>Сортировка:</h2>
-         <ul>
-           <li><a href="#">По цене</a></li>
-           <li><a href="#">По типу</a></li>
-           <li><a href="#">По популярности</a></li>
-         </ul>
-       <div class="sort-arrow">
-         <a href="#">/\</a>
-         <a href="#">\/</a>
-       </div>
-     </div>
+   <div class="flex-container">
 
-<div class="flex-container">
-     <div class="filter-device">    
+     <div class="sort">
+       <div class="filter-name"> 
+         <h2>Фильтр:</h2> 
+        </div>
+        
       <div class="price">
-       <b>Стоимость</b>
+       <h2>Стоимость</h2>
        <input type="range" name="price">
      </div>
      
@@ -74,28 +67,55 @@
        <input type="checkbox" name="yes">Есть<br>
        <input type="checkbox" name="no">Нет
      </div>
+     <div class="filter-btn">
        <a class="btn" href="#">Показать</a>
      </div>
+     </div>
+    
 
-     <div class="filter-results">   
-       <div class="list-device">  
+<div class="filter-results">    
+        <div class="sort-results">
+          <ul>
+           <li><a class="text-sort">Сортировка:</a></li>
+           <li><a href="#">По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По популярности</a></li>
+           <li><a class="arrow-up" href="#">/\</a></li>
+           <li><a class="arrow-down" href="#">\/</a></li>
+          </ul>
+        </div>
+
+  <div class="list-device">
+
     <article class="proposed-device">
+        <div class="pay-device">
+          <a class="btn" href="#">В Корзину</a>
+          <a class="sort-device" href="#"><p>Добавить к сравнению</p></a>
+        </div>
            <img src="img/item-1.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
           <b>Любительская селфи-палка</b>
           <span>500 руб.</span>
-        </div>
+        </div> 
     </article>
 
     <article class="proposed-device">
+        <div class="pay-device">
+          <a class="btn" href="#">В Корзину</a>
+          <a class="sort-device" href="#"><p>Добавить к сравнению</p></a>
+        </div>
        <img src="img/item-2.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <b>Профессиональная селфи-палка</b>
+          <b>Профессиональная<br> селфи-палка</b>
           <span>1500 руб.</span>
         </div>
     </article>
 
     <article class="proposed-device">
+        <div class="pay-device">
+          <a class="btn" href="#">В Корзину</a>
+          <a class="sort-device" href="#"><p>Добавить к сравнению</p></a>
+        </div>
        <img src="img/item-3.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
           <b>Непотопляемая селфи-палка</b>
@@ -104,25 +124,34 @@
     </article>
 
     <article class="proposed-device">
+        <div class="pay-device">
+          <a class="btn" href="#">В Корзину</a>
+          <a class="sort-device" href="#"><p>Добавить к сравнению</p></a>
+        </div>
        <img src="img/item-4.jpg" width="360" height="380" alt="selfi stick">
         <div class="info-device">
-          <b>Селфи-палка "Следуй за мной"</b>
+          <b>Селфи-палка «Следуй за<br> мной»</b>
           <span>4900 руб.</span>
         </div>
     </article>
+    
+
     </div>
 
-    <div class="page-nav">
-        <ul>
-          <li><a class="back" href="#">Назад</a></li>
-          <li>1</li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a class="back" href="#">Вперед</a></li>
-        </ul>   
+     <div class="page-nav">
+        
+          <a class="back" href="#">Назад</a>
+      <div>
+          <a>1</a></li>
+          <a href="">2</a>
+          <a href="">3</a>
+      </div>
+          <a class="forwards" href="#">Вперед</a>
+           
      </div>
-    </div>
-    </div>
+    
+</div>
+</div>
     </div>
    </main>
 
@@ -138,9 +167,9 @@
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инста</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>  
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-tw" href="#"></a>  
         </div>
         <div class="footer-contacts">
            <ul class="footer-nav">
@@ -154,6 +183,7 @@
           </a>
         </div>
      </div>
+
    </footer>
 
   </body>
