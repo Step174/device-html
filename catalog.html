@@ -31,8 +31,8 @@
      </div>
    </header>
 
-   <main class="">
-    <div class="">
+   <main>
+    <div class="container-catalog">
      <div class="breadcrumbs">
      <h2>Моноподы для селфи</h2>
        <ul>
@@ -50,28 +50,74 @@
         
       <div class="price">
        <h2>Стоимость</h2>
-       <input type="range" name="price">
+
+       <div class="range-filter">
+          <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 0%; width: 55%"></div>
+          </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+           <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+           <label class="max-price">до<input name="max-price" type="text" value="5000"></label>
+         </div>
+       </div>
+
      </div>
      
      <div class="color">
        <h2>Цвет</h2>
-       <input type="checkbox" name="black">Черный<br>
-       <input type="checkbox" name="white">Белый<br>
-       <input type="checkbox" name="blue">Синий<br>
-       <input type="checkbox" name="red">Красный<br>
-       <input type="checkbox" name="pink">Розовый
+       <label class="login-checkbox">
+          <input type="checkbox" name="black">
+          <span class="checkbox-indicator"></span>
+          Черный
+       </label><br>
+       <label class="login-checkbox">
+          <input type="checkbox" name="white">
+          <span class="checkbox-indicator"></span>
+          Белый
+       </label><br>
+       <label class="login-checkbox">
+          <input type="checkbox" name="blue">
+          <span class="checkbox-indicator"></span>
+          Синий
+       </label><br>
+        <label class="login-checkbox">
+          <input type="checkbox" name="red">
+          <span class="checkbox-indicator"></span>
+          Красный
+       </label><br>
+        <label class="login-checkbox">
+          <input type="checkbox" name="pink">
+          <span class="checkbox-indicator"></span>
+          Розовый
+       </label>
      </div>
      
      <div class="bluetooth">
+
        <h2>Bluetooth</h2>
-       <input type="checkbox" name="yes">Есть<br>
-       <input type="checkbox" name="no">Нет
+     <label class="login-radio">
+       <input type="radio" checked name="yes">
+       <span class="radio-indicator"></span>
+       Есть
+     </label><br>
+
+     <label class="login-radio">
+       <input type="radio" name="yes">
+       <span class="radio-indicator"></span>
+       Нет
+     </label>
      </div>
+
+
      <div class="filter-btn">
        <a class="btn" href="#">Показать</a>
      </div>
      </div>
-    
+
 
 <div class="filter-results">    
         <div class="sort-results">
@@ -80,8 +126,8 @@
            <li><a href="#">По цене</a></li>
            <li><a href="#">По типу</a></li>
            <li><a href="#">По популярности</a></li>
-           <li><a class="arrow-up" href="#">/\</a></li>
-           <li><a class="arrow-down" href="#">\/</a></li>
+           <li><a class="arrow-up" href="#"></a></li>
+           <li><a class="arrow-down" href="#"></a></li>
           </ul>
         </div>
 
@@ -139,15 +185,13 @@
     </div>
 
      <div class="page-nav">
-        
           <a class="back" href="#">Назад</a>
       <div>
           <a>1</a></li>
           <a href="">2</a>
           <a href="">3</a>
       </div>
-          <a class="forwards" href="#">Вперед</a>
-           
+          <a class="forwards" href="#">Вперед</a>    
      </div>
     
 </div>
@@ -178,7 +222,7 @@
              <li><a href="#">Корзина</a></li>     
          </ul>
           <p>тел.: +7(495)495-95-95</p>
-          <a class="btn" href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru">
             <img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy">
           </a>
         </div>
