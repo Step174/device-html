@@ -167,13 +167,15 @@ a {
   display: flex;
   justify-content: space-between;
   width: 440px;
-  border-bottom: 2px solid black;
-  
+  border-bottom: 2px solid transparent;  
 }
+
 .search-focus a {
+  position: relative;
+  top: -2px;
   padding: 0 16px;
   outline: 2px solid black;
-  opacity: 1;
+  opacity: 0;
 }
 .search-focus a:hover {
   color: white;
@@ -201,6 +203,11 @@ a {
   opacity: 0.6;
 }
 .search-focus input:focus{
+  width: 440px;
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+.search-focus input:focus +a{
   opacity: 1;
 }
 
@@ -1387,14 +1394,24 @@ footer {
   border: 3px solid #dbdbdb;
 }
 
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
   top: 8px;
-  left: 1px;
+  left: 6px;
 
-  width: 15px;
+  width: 10px;
+  height: 2px;
+
+  background-color: #000000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 4px;
+
+  width: 5px;
   height: 2px;
 
   background-color: #000000;
@@ -1493,8 +1510,13 @@ display: none;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 50%;
-  background: #eeeeee;
-  
+  background: #eeeeee; 
+}
+
+.range-controls .toggle:hover {
+   border: 2px solid white;
+   background: #7eae29;
+   box-shadow: 0 1px 5px -1px black
 }
 
 .range-controls .toggle-min {
@@ -1533,6 +1555,142 @@ display: none;
   background: transparent;
 }
 
+
+/* ------------------------Всплывающая форма------------------------ */
+/* ------------------------Всплывающая форма------------------------ */
+/* ------------------------Всплывающая форма------------------------ */
+
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+
+  display: none;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+
+  color: #000000;
+
+  background: #f8f3f0 url("img/pattern-white.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+
+  background: #e9e5dc url("img/map.png");
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form textarea {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -504px;
+}
+
+.login-form input.icon-password {
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -45px;
+}
+
+.login-form .restore {
+  float: right;
+
+  color: #000000;
+}
+
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
 
 
 
