@@ -142,6 +142,9 @@ a {
 .header-up ul li:nth-child(2)::before {
   background-position: -5px -25px;
 }
+.header-up ul li:nth-child(3)::before {
+  background-position: -5px -25px;
+}
 .header-up ul li:last-child::before {
   background-position: -5px -5px;
 }
@@ -227,17 +230,25 @@ a {
   margin-right: 104px;
 }
 
+
+
 .nav-catalog-header {
   position: absolute;
+  left: -58px;
   display: flex;
-  width: 1100px;
+  width: 1160px;
   height: 166px;
 
   background-color: rgba(247,226,150,1);
-  opacity: 0;
   z-index: 111;
   transition: 0.3s;
+  display: none;
 }
+
+.nav-catalog-header ul:first-child {
+  margin-left: 58px;
+}
+
 .nav-catalog-header ul {
   width: 160px;
   margin: 0;
@@ -259,8 +270,28 @@ a {
   font-weight: normal;
 }
 
+.nav-catalog-active {
+  position: relative;
+  display: inline-block;
+}
+
+.plus::after {
+  content: "+";
+  position: absolute;
+  left: 227px;
+  top: -11px;
+
+  font-family: "Open Sans Light";
+  font-size: 35px;
+  text-transform: none;
+  opacity: 0.6;
+}
+.plus-catalog::after {
+  top: -14px;
+}
+
 .nav-catalog-active:hover .nav-catalog-header {
-  opacity: 1;
+  display: flex;
 }
 
 
@@ -678,7 +709,7 @@ a {
 
 footer {
   margin-top: 92px;
-  width: 1440px;
+  /*width: 1440px;*/
   background-color: #464646;
 }
 
@@ -705,7 +736,14 @@ footer {
 .logo-adress img:active {
   opacity: 0.6;
 }
-
+.logo-adress p {
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+  color: white;
+}
 
 .footer-social {
   width: 453px;
@@ -724,6 +762,7 @@ footer {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  color: white;
 }
 .footer-social ul li:first-child {
    margin-left: 12px;
@@ -745,16 +784,22 @@ footer {
   display: inline-block;
   width: 39px;
   height: 38px;
-  outline: 1px solid black;
   margin-left: 12px;
   margin-top: 63px;
   opacity: 0.6;
-  background: black;
+  background-image: url(../img/social-sprite.png);
+  background-repeat: no-repeat;
 }
+
 .social-btn-fb {
   margin-left: 150px;
-  background-image: url(../img/facebook.png);
-  background-repeat: no-repeat; 
+  background-position: -5px -5px;
+}
+.social-btn-inst {
+  background-position: -54px -5px;
+}
+.social-btn-tw {
+  background-position: -5px -53px;
 }
 .social-btn:hover {
   opacity: 1;
@@ -774,12 +819,22 @@ footer {
   line-height: 30px;
   letter-spacing: 0.01em;
   font-weight: normal;
+  color: white;
 }
 
 .footer-nav {
   margin: 0;
   padding: 0;
 }
+.footer-nav li a {
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+  color: white;
+}
+
 
 .footer-nav li:first-child {
   margin-right: 35px;
@@ -918,18 +973,16 @@ footer {
 }
 
 .breadcrumbs ul li::after {
-  content: "";
+  content: "›";
 
   position: absolute;
-  width: 7px;
-  height: 8px;
-  background: black;
-  margin-top: 14px;
-  margin-left: 15px;
+  color: black;
+  opacity: 1;
+  margin-left: 20px;
 }
 
 .breadcrumbs ul li:last-child::after{
-  width: 0;
+  display: none;
 }
 
 .breadcrumbs ul li:hover {
@@ -944,15 +997,15 @@ footer {
 .flex-container{
   display: flex;
   justify-content: flex-start;
+
 }
+
 
 
 .sort {
   display: flex;
   flex-direction: column;
   min-height: 1280px;
-  width:465px;
-
   background-color: #efefef;
 
 }
@@ -1045,6 +1098,8 @@ footer {
   font-size: 16px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+
+
 }
 
 
@@ -1097,9 +1152,6 @@ footer {
   width: 975px;
   height: 1205px;
 }
-
-
-
 
 
 .list-device {
@@ -1404,9 +1456,7 @@ display: none;
   opacity: 0.6;
 }
 
-/*.max-price {
-  text-align: center;
-}*/
+
 
 .price-controls input {
   font-family: "Open Sans light", 'Arial', sans-serif;
@@ -1419,6 +1469,7 @@ display: none;
   color: #283136;
   border: none;
   border-radius: 5px;
+  background: transparent;
 }
 
 
