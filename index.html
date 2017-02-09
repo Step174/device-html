@@ -47,6 +47,23 @@
    </header>
 
    <main>
+<div class="slider-container">
+
+ <div class="radio-slider">
+     <label class="slider-radio">
+       <input type="radio" checked name="1">
+       <span class="radio-indicator-slider"></span>
+     </label>
+     <label class="slider-radio">
+       <input type="radio"  name="1">
+       <span class="radio-indicator-slider"></span>
+     </label>
+     <label class="slider-radio">
+       <input type="radio"  name="1">
+       <span class="radio-indicator-slider"></span>
+     </label>
+</div>
+     
 
      <div class="item-promo slider-1 container">
        <img src="img/selfi-stick-index.png" width="384" height="486" alt="selfi-stick-ben">
@@ -105,7 +122,7 @@
         </div>
       </div>  
      </div>
- 
+ </div>
      <div class="item-catalog container">
      	  <div>
      	    <a href="#"><div class="item-img"><img src="img/popular-1.png" width="97" height="55" alt="VR"></div><p>Виртуальная реальность</p></a>
@@ -206,16 +223,25 @@
      </div>
    </footer>
 
-<div class="modal-content">
+  <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>Ваше имя:
-        <input class="icon-user" type="text" name="login" placeholder="Логин"></p>
-        <p>Ваш e-mail:
-        <input class="icon-password" type="password"  name="password" placeholder="Пароль"></p>
-     <p>Текст письма:
-        <textarea name="comment" cols="40" rows="3"></textarea></p>
-  
+    
+    <div class="modal-user">  
+      <p>Ваше имя:</p>
+        <input class="icon-user" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+     </div>   
+      
+      <div class="modal-password">  
+        <p>Ваш e-mail:</p>
+        <input class="icon-password" type="password"  name="password" placeholder="Для отправки ответа">
+     </div>
+
+    <div class="modal-comment"> 
+     <p>Текст письма:</p>
+        <textarea name="comment" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+   </div>
         <button class="btn" type="submit">Отправить</button>
       </form>
   </div>
