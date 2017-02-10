@@ -81,6 +81,7 @@ a {
 }
 
 .main-header {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
   background: linear-gradient(to bottom, 
@@ -203,7 +204,7 @@ a {
   content: "";
   position: absolute;
   top: 91px;
-  left: 204px;
+  left: 63px;
   display: block;
   width: 16px;
   height: 16px;
@@ -313,14 +314,16 @@ a {
 }
 .slider-container {
   position: relative;
+  width: 1160px;
 }
 
 /*-------переключатель слайдера----------*/
+
 .radio-slider {
   position: absolute;
 
   top: 385px;
-  right: 205px;
+  right: 67px;
   z-index: 2000;
 }
 
