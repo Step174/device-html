@@ -24,7 +24,7 @@
 }
 
 body {
-	font-size: 15px;
+  font-size: 15px;
   color: ;
   font-weight: normal;
   font-family: "Open Sans light", 'Arial', sans-serif;
@@ -104,8 +104,10 @@ a {
 }
 
 .header-up {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 1040px;
   margin: 0 auto;
   margin-top: 20px;
@@ -165,8 +167,10 @@ a {
 }
 
 .search-focus {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 440px;
   border-bottom: 2px solid transparent;  
 }
@@ -197,7 +201,7 @@ a {
   font-size: 15px;
   letter-spacing: 0.01em;
   text-transform: none;
-  font-weight: normal;*/
+  font-weight: normal;
 }
 
 .search-focus::before {
@@ -254,6 +258,7 @@ a {
 .nav-catalog-header {
   position: absolute;
   left: -58px;
+  display: -ms-flexbox;
   display: flex;
   width: 1160px;
   height: 166px;
@@ -310,6 +315,7 @@ a {
 }
 
 .nav-catalog-active:hover .nav-catalog-header {
+  display: -ms-flexbox;
   display: flex;
 }
 .slider-container {
@@ -374,8 +380,10 @@ display: none;
 
 .item-promo {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 1160px;
   margin-bottom: 61px;
 
@@ -498,6 +506,7 @@ display: none;
 }
 
 .char-flex {
+  display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
 }
@@ -527,8 +536,10 @@ display: none;
 }
 
 .item-catalog {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 68px;
 }
 
@@ -588,8 +599,10 @@ display: none;
 
 
 .features {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 1440px;
   min-height: 385px;
   margin-bottom: 97px;
@@ -618,8 +631,10 @@ display: none;
   }
 
  .features-item ul {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   height: 317px;
   margin: 0;
   margin-left: -111px;
@@ -682,11 +697,15 @@ display: none;
 }
 
 .features-info {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 760px;
 
-  align-items: center;
+  -ms-flex-align: center;
+
+      align-items: center;
 }
 
 .text {
@@ -717,8 +736,10 @@ display: none;
 }
 
 .brands {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   height: 100px;
   margin-bottom: 100px;
 }
@@ -739,8 +760,10 @@ display: none;
 
 .info-company {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 1160px;
   min-height: 555px;
 }
@@ -842,8 +865,10 @@ footer {
 }
 
 .main-footer {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   min-height: 323px;
 }
 
@@ -1123,8 +1148,10 @@ footer {
 
 
 .flex-container{
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 
 }
 
@@ -1154,8 +1181,10 @@ footer {
 }
 
 .sort {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   min-height: 1280px;
   background-color: #efefef;
 
@@ -1272,8 +1301,10 @@ footer {
 }
 
 .color {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   min-height: 272px;
   margin-bottom: 12px;
 }
@@ -1284,8 +1315,10 @@ footer {
 }
 
 .bluetooth {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   min-height: 150px;
   margin-bottom: 23px;
 }
@@ -1296,20 +1329,28 @@ footer {
 }
 
 .filter-results {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 975px;
   height: 1205px;
 }
 
 
 .list-device {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   width: 760px;
   min-height: 960px;
   margin-left: 76px;
@@ -1329,8 +1370,10 @@ footer {
 }
 
 .info-device {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 
   margin-top: 29px;
 }
@@ -1347,8 +1390,10 @@ footer {
 }
 
 .page-nav {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 760px;
   margin-left: 76px;
   text-align: center;
@@ -1562,7 +1607,6 @@ display: none;
 
 .range-filter {
   width: 228px;
-  /*margin: 50px auto; /* для демонстрации */*/
 }
 
 .range-controls {
