@@ -1596,6 +1596,7 @@ footer {
     width: 70%;
     height: 2px;
     background: #91c92f;
+    margin-left: 0%; 
 }
 
 .range-controls .toggle {
