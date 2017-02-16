@@ -49,7 +49,6 @@ h2 {
 }
 
 header ul li,
-.item-promo ul li,
 .footer-social ul li,
 .footer-contacts ul li,
 .breadcrumbs ul li,
@@ -426,7 +425,7 @@ a {
 }
 
 .item-promo-info p {
-    width: 490px;
+   padding-right: 20px;
     margin-top: -20px;
     margin-left: 3px;
     margin-bottom: 53px;
@@ -441,6 +440,7 @@ a {
     top: 0;
     left: 130px;
 }
+
 
 .slider-2 {
     display: none;
@@ -483,16 +483,18 @@ a {
 .char-flex {
     display: -ms-flexbox;
     display: flex;
+    justify-content: flex-start;
     margin-top: 64px;
 }
 
 .character:first-child {
-    margin-right: 75px;
+    margin-right: 60px;
 }
 
 .character:nth-child(2) {
-    margin-right: 74px;
+    margin-right: 52px;
 }
+
 
 .character b {
     margin-left: 3px;
@@ -1063,15 +1065,9 @@ footer {
 
 
 /*------------------------CATALOG------------------------------*/
-
-
+/*------------------------CATALOG------------------------------*/
 /*------------------------CATALOG------------------------------*/
 
-
-/*------------------------CATALOG------------------------------*/
-
-
-/*------------------------CATALOG------------------------------*/
 
 .background-catalog {
     position: width: 100%;
@@ -1714,11 +1710,7 @@ footer {
 
 
 /* ------------------------Всплывающая форма------------------------ */
-
-
 /* ------------------------Всплывающая форма------------------------ */
-
-
 /* ------------------------Всплывающая форма------------------------ */
 
 @keyframes bounce {
@@ -1882,67 +1874,3 @@ footer {
     display: block;
     animation: bounce 0.6s;
 }
-
-
-/*--------------Фоны----------------------*/
-
-
-/*
- .container,
- .sort {
-  outline: 2px solid yellow;
-  background-color: rgba(241,255,0,0.4);
- }
-
- 
- .main-header,
- .header-down,
- .item-promo-info,
- .item-catalog,
- .features,
- .brands,
- .info-company,
- .main-footer,
- footer,
- .main-width,
- .filter-device,
-  {
-  outline: 2px solid green;
-  background-color: rgba(114,255,0,0.5);
- }
-
-.main-user,
-.main-navigation,
-.features-item,
-.header-up,
-.item-catalog div,
-.features-info,
-.breadcrumbs,
-.price,
-.color,
-.bluetooth,
-.sort,
-.proposed-device,
-.page-nav,
-.text,
-.filter-results,
-.filter-name,
-.sort-results,
-.back,
-.forwards {
-  outline: 2px solid black;
- }
-
-
- .header-up,
- .item-promo,
- .about-us,
- .contacts,
- .logo-adress,
- .footer-social,
- .footer-contacts,
- .list-device,
- .sort-results {
-  outline: 2px solid orange;
-  background-color: rgba(255,141,0,0.5);
- }
